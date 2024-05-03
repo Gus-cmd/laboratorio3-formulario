@@ -11,7 +11,7 @@
     <h2>Datos Personales</h2>
 
     <!-- Creando Formulario -->
-    <form action="#" method="post">  
+    <form action="#" method="get">  
         <table border="0" width="100%">
             <!--Item 1  -->
             <tr>
@@ -19,7 +19,7 @@
                 <label for="Nombre">Nobres y Apellidos</label>
                 <input type="text" id="Nombre" name="Nombre" placeholder="Nombres y Apellidos" required>
             </td>
-            </tr>
+            </tr>   
             <!-- Item 2 -->
             <tr>
             <td>
@@ -27,10 +27,27 @@
                 <input type="email" id="Correo" name="Correo" placeholder="example@gmail.com" required>
             </td>
             </tr>
-            
+            <!-- Item 3 -->
+            <tr>
+            <td>
+                    <label for="Fecha_nacimiento">Fecha de Nacimiento</label>
+                    <input type="date" id="Fecha_nacimiento" name="Fecha_nacimiento"  required>
+            </td>
+            </tr>
+            <!-- Item 4 -->
+            <tr>
+            <td>
+                    <label for="Genero">Genero</label>
+                    <select name="Genero" id="Genero" required>
+                        <option value="Seleccionar">Seleccionar</option>
+                        <option value="Hombre">Hombre</option>
+                        <option value="Mujer">Mujer</option>
+                    </select>
+            </td>
+            </tr>
         </table>
+        <!-- Creamos El submit-->
+        <input type="submit" value="Enviar">
     </form>
-
-
 </body>
 </html>

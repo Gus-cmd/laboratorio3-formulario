@@ -6,13 +6,64 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <!-- Procedemos a estilizar un poco nuestro formulario -->
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h2{
+            color: #333;
+        }
+
+        form{
+            width: 50%;
+            background-color: #090464;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        label{
+            display: block;
+            margin-bottom: 8px;
+            color:#fff;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
     <!-- Titulo de Mi Fomrulario -->
     <h2>Datos Personales</h2>
 
     <!-- Creando Formulario -->
     <form action="#" method="get">  
-        <table border="0" width="100%">
+        <table border="0">
             <!--Item 1 Nombres y Apellidos -->
             <tr>
             <td>

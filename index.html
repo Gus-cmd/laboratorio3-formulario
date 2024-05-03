@@ -3,27 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario</title>
 </head>
 <body>
     <!-- Procedemos a estilizar un poco nuestro formulario -->
     <style>
-        body{
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            padding: 20px;
-        }
-
-        h2{
-            color: #333;
+        body, html{
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(MEDIA/Background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0%;
+            font-family: Arial, sans-serif
         }
 
         form{
-            width: 50%;
             background-color: #090464;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2{
+            color: #fff;
+            text-align: center;
         }
 
         label{
@@ -35,7 +43,7 @@
         input[type="text"],
         input[type="email"],
         input[type="date"],
-        select {
+        select, textarea {
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
@@ -51,19 +59,22 @@
             border: none;
             border-radius: 4px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 16px;    
+            margin: 0 50px ;
         }
 
         input[type="submit"]:hover {
             background-color: #0056b3;
         }
     </style>
-    <!-- Titulo de Mi Fomrulario -->
-    <h2>Datos Personales</h2>
-
     <!-- Creando Formulario -->
     <form action="#" method="get">  
         <table border="0">
+            <tr>
+                <td>
+                    <h2>Datos <br> Personales</h2>
+                </td>
+            </tr>
             <!--Item 1 Nombres y Apellidos -->
             <tr>
             <td>
@@ -94,6 +105,12 @@
                         <option value="Hombre">Hombre</option>
                         <option value="Mujer">Mujer</option>
                     </select>
+            </td>
+            </tr>
+            <!-- Item de comentario -->
+            <tr>
+            <td>
+                <textarea id="Mensaje" name="Mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
             </td>
             </tr>
         </table>
